@@ -1,0 +1,448 @@
+// main : ../child-theme.scss
+
+@import "child_theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  margin: 1em 0 .66em;
+}
+h2 {
+  color: $blue-dark;
+//  margin-top: 2em;
+}
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+	font-size: 130%;
+}
+
+
+/* Styling the text in a box on homepage- Style used in a second widget that is used on homepage */
+.text-box-on-homepage {
+	letter-spacing: 1px;
+	font-size: 150%;
+}
+
+
+/*#page > */.wrapper {
+  padding: 0;
+}
+
+.page-header {
+  .container {
+    display: flex;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+  img {
+    max-height: 80px;
+    width: auto;
+  }
+  .navbar-brand {
+    margin-bottom: $grid-gutter-width;
+    margin-right: 3rem;
+    margin-top: $grid-gutter-width;
+  }
+  .logo2 {
+    float: right;
+    margin-top: $grid-gutter-width;
+    max-width: 260px;
+  }
+}
+
+
+.main-menu {
+  clear: both;
+  .navbar {
+    padding: 0;
+    #main-menu {
+      margin-left: 0 !important;
+      margin-right: auto !important;
+      a.nav-link {
+        color: white;
+        font-size: 200%;
+        padding: 20px;
+        text-transform: capitalize;
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+      @media (min-width: 768px) {
+        // align item to the right
+        width: 100%;
+        li.menu-item-25 {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}
+#wrapper-hero {
+//  text-align: center;
+  img.size-full {
+    width: 100%;
+  }
+  #wrapper-static-hero {
+    padding: $grid-gutter-width;
+    &,
+    h2,
+    a {
+      color: white;
+    }
+    .inner {
+      background: $pink;
+      border-radius: $border-radius-base;
+      min-height: 150px;
+      padding: $grid-gutter-width/2;
+      text-align: center;
+    }
+    h2 {
+      margin: 0 0 .5em;
+    }
+    a[href^='http'] {
+      text-decoration: underline;
+    }
+    .fa {
+      font-size: 200%;
+    }
+    h3 {
+      cursor: pointer;
+      display: none;
+      font-size: $font-size-base;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+      &.subnav {
+        background: darken($pink, 10%);
+        border-radius: 0 0 $border-radius-base $border-radius-base;
+        left: 15px;
+        position: absolute;
+        right: 15px;
+        z-index: 10;
+        &,
+        ul {
+          display: none;
+          &.active {
+            display: block;
+          }
+        }
+        li {
+          position: relative;
+          h4 {
+            border-top: rgba(black, .15) 1px solid;
+            cursor: pointer;
+            font-size: 1.2rem;
+            line-height: 1.1em;
+            margin: 0;
+            padding: 15px;
+            &.active {
+              background: darken($pink, 20%);
+              border-top-color: transparent;
+            }
+          }
+          ul {
+            background: darken($pink, 20%);
+//            border-radius: 0 0 $border-radius-base $border-radius-base;
+            padding: 0 15px 10px 15px;
+            width: 100%;
+            z-index: 15;
+            a {
+              display: block;
+              line-height: 1.1em;
+              padding: 15px;
+            }
+          }
+          &:last-child {
+            ul {
+              border-radius: 0 0 $border-radius-base $border-radius-base;
+            }
+          }
+          &:first-child {
+            h4 {
+              border-top: 0;
+            }
+          }
+          @media (min-width: 768px) {
+            ul {
+              border-radius: 0 $border-radius-base $border-radius-base $border-radius-base;
+              left: 95%;
+              padding-top: 10px;
+              position: absolute;
+              text-align: left;
+              top: 0;
+            }
+            h4 {
+              &.active {
+//                border-bottom: 0;
+              }
+            }
+            &:last-child {
+              ul {
+                border-radius: 0 $border-radius-base $border-radius-base $border-radius-base;
+              }
+              h4 {
+                border-radius: 0 0 0 $border-radius-base;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .col-sm-4:last-child {
+      ul.subnav li {
+        ul {
+//          border-radius: 0 0 $border-radius-base $border-radius-base;
+          left: auto;
+          right: 95%;
+        }
+        @media (min-width: 768px) {
+          ul {
+            border-radius: $border-radius-base 0 $border-radius-base $border-radius-base;
+          }
+          &:last-child {
+            h4 {
+              border-radius: 0 0 $border-radius-base 0;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+ul#post_navigation {
+  height: 0;
+  margin: 0;
+  position: relative;
+  li {
+    display: inline-block;
+    text-indent: -10000px;
+    a {
+      $s : 50px;
+      background: transparent url(../sprite.png) no-repeat -97px 25px;
+      height: $s * 3;
+      left: 0;
+      position: absolute;
+      text-indent: -10000px;
+      top: $s * 3;
+      width: $s;
+      z-index: 2;
+    }
+    &.next {
+      a {
+        background-position: -162px 25px;
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+}
+
+.rainbow{
+//  @extend .row;
+display: flex;
+  height:25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  max-width:700px;
+//  margin:$grid-gutter-width*2 auto;
+  width:80%;
+  li {
+//    @extend .col-sm-3;
+    background:$blue-dark;
+//    display: block;
+    float: left;
+    list-style-type: none;
+    width: 25%;
+    &:nth-child(1) {
+      background:$pink;
+    }
+    &:nth-child(2) {
+      background:$yellow;
+    }
+    &:nth-child(3) {
+      background:$blue;
+    }
+  }
+}
+#wrapper-footer {
+  margin-top: $grid-gutter-width*3;
+  .row {
+    margin-bottom: $grid-gutter-width/2;
+    margin-top: $grid-gutter-width*2;
+    > div {
+      margin-bottom: $grid-gutter-width;
+    }
+    img {
+      display: block;
+      margin: auto;
+      max-height: 80px;
+    }
+  }
+/*  small {
+    color: #999;
+  }
+  */
+}
+// very footer
+#wrapper-footer-full {
+  background-color: transparent;
+  font-size: $font-size-sm;
+  text-align: center;
+  &,
+  a {
+      color: #333;
+  }
+}
+
+body {
+  &.home {
+    h1.entry-title,
+    #post_navigation {
+      display: none;
+    }
+    .page-list {
+      @extend .row;
+      .page-list-ext-item {
+        @extend .col-sm-4;
+        padding: $grid-gutter-width/2;
+        @media (min-width: 768px) {
+          padding: $grid-gutter-width/2 $grid-gutter-width;
+        }
+        @media (min-width: 1024px) {
+          padding: $grid-gutter-width $grid-gutter-width*2;
+        }
+        text-align: center;
+        .page-list-ext-image {
+          float: none;
+          margin: 0 auto;
+        }
+        .page-list-ext-title {
+          $h : 4em;
+          display: table;
+          width: 100%;
+          a {
+            background-color: $blue;
+            border-radius: 10px;
+            color: white;
+            display: table-cell;
+            font-size: $font-size-base;
+            height: $h;
+            padding: .6em;
+            vertical-align: middle;
+          }
+        }
+        .page-list-ext-item-content {
+          display: none;
+        }
+      }
+    }
+  }
+  &:not(.home) {
+    .main-menu {
+      display: none;
+    }
+    article.type-page {
+      text-align: center;
+      .entry-header {
+        img {
+          max-width: 300px;
+        }
+      }
+      h1 {
+        // text gradient
+        // https://stackoverflow.com/questions/37831837/gradient-text-color
+        background-image: -webkit-linear-gradient(left, $blue-dark, $blue-dark, $blue, $blue); /* For Chrome and Safari */
+        background-image:    -moz-linear-gradient(left, $blue-dark, $blue-dark, $blue, $blue); /* For old Fx (3.6 to 15) */
+        background-image:     -ms-linear-gradient(left, $blue-dark, $blue-dark, $blue, $blue); /* For pre-releases of IE 10*/
+        background-image:      -o-linear-gradient(left, $blue-dark, $blue-dark, $blue, $blue); /* For old Opera (11.1 to 12.0) */
+        background-image:         linear-gradient(to right, $blue-dark, $blue-dark, $blue, $blue); /* Standard syntax; must be last */
+        color:transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-weight: 500;
+        margin-top: -$grid-gutter-width;
+        margin-bottom: $grid-gutter-width*2;
+        position: relative;
+      }
+      .ab-block-container {
+        &:not(.bg-blue) {
+          border-bottom: 1px solid $gray-lighter;
+          margin-bottom: $grid-gutter-width;
+          padding-bottom: $grid-gutter-width !important;
+          .ab-container-content {
+            @extend .row;
+            .ab-block-accordion {
+              @extend .col-sm-4;
+              +.ab-block-accordion {
+                margin-top: 0; // stange that we have to override that negative margin...
+              }
+              details {
+                .ab-accordion-title {
+                  background: $pink;
+                  border-radius: $border-radius-base;
+                  color: white;
+                  &,
+                  &:focus {
+                    outline: none;
+                  }
+                }
+                .ab-accordion-text {
+                  background: $gray-lighter;
+                }
+                &[open] {
+                  border-radius: $border-radius-base;
+                  box-shadow: 0 0 15px #777;
+                  .ab-accordion-title {
+//                    background: $primary;
+                    border-radius: $border-radius-base $border-radius-base 0 0;
+                  }
+                  .ab-accordion-text {
+                    border-radius: 0 0 $border-radius-base $border-radius-base;
+                  }
+                }
+              }
+            }
+          }
+          &:last-child {
+            border-bottom: 0;
+            padding-bottom: 0 !important;
+          }
+        }
+        &.bg-blue {
+          background: $primary !important;
+          color: white;
+          left: 50%;
+          margin-bottom: $grid-gutter-width*3 !important;
+          margin-left: -50vw;
+          margin-right: -50vw;
+          position: relative;
+          right: 50%;
+          width: 100vw;
+          .ab-container-inside {
+            @extend .container;
+            padding-bottom: $grid-gutter-width;
+            padding-top: $grid-gutter-width;
+            h2 {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
