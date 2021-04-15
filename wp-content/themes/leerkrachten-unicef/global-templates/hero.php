@@ -6,7 +6,12 @@
  */
 
 ?>
-
+<style type="text/css">
+	#custom_html-2, #custom_html-3 {
+		flex: 0 0 100% !important;
+    	max-width: 100% !important;
+	}
+</style>
 <?php if ( is_active_sidebar( 'hero' ) || is_active_sidebar( 'statichero' ) || is_active_sidebar( 'herocanvas' ) ) : ?>
 
 	<div class="wrapper" id="wrapper-hero">

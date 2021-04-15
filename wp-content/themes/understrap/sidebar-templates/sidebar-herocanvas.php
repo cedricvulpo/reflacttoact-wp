@@ -5,6 +5,8 @@
  * @package understrap
  */
 
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 ?>
 
 <?php if ( is_active_sidebar( 'herocanvas' ) ) : ?>

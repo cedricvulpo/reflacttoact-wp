@@ -1,15 +1,15 @@
-# Translation of WordPress - 5.1.x - Continents & Cities in French (France)
-# This file is distributed under the same license as the WordPress - 5.1.x - Continents & Cities package.
+# Translation of WordPress - 5.6.x - Continents & Cities in French (France)
+# This file is distributed under the same license as the WordPress - 5.6.x - Continents & Cities package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-07-18 12:17:30+0000\n"
+"PO-Revision-Date: 2019-05-03 20:41:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: fr\n"
-"Project-Id-Version: WordPress - 5.1.x - Continents & Cities\n"
+"Project-Id-Version: WordPress - 5.6.x - Continents & Cities\n"
 
 #: wp-admin/includes/continents-cities.php:554
 msgid "Yap"
@@ -1323,7 +1323,7 @@ msgstr "Ittoqqortoormiit (Scoresbysund)"
 
 #: wp-admin/includes/continents-cities.php:216
 msgid "Sao Paulo"
-msgstr "São Paulo"
+msgstr "Sao Paulo"
 
 #: wp-admin/includes/continents-cities.php:215
 msgid "Santo Domingo"
@@ -1852,7 +1852,7 @@ msgstr "San Salvador de Jujuy"
 #: wp-admin/includes/continents-cities.php:78
 #: wp-admin/includes/continents-cities.php:112
 msgid "Cordoba"
-msgstr "Córdoba"
+msgstr "Cordoba"
 
 #: wp-admin/includes/continents-cities.php:77
 msgid "ComodRivadavia"
@@ -1914,7 +1914,7 @@ msgstr "Tombouctou"
 
 #: wp-admin/includes/continents-cities.php:62
 msgid "Sao Tome"
-msgstr "São Tomé"
+msgstr "Sao Tomé"
 
 #: wp-admin/includes/continents-cities.php:61
 msgid "Porto-Novo"

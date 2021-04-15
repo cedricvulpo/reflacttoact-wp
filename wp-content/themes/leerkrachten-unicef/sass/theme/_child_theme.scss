@@ -379,20 +379,20 @@ body {
         margin-bottom: $grid-gutter-width*2;
         position: relative;
       }
-      .ab-block-container {
+      .gb-block-container {
         &:not(.bg-blue) {
           border-bottom: 1px solid $gray-lighter;
           margin-bottom: $grid-gutter-width;
           padding-bottom: $grid-gutter-width !important;
-          .ab-container-content {
+          .gb-container-content {
             @extend .row;
-            .ab-block-accordion {
+            .gb-block-accordion {
               @extend .col-sm-4;
-              +.ab-block-accordion {
+              +.gb-block-accordion {
                 margin-top: 0; // stange that we have to override that negative margin...
               }
               details {
-                .ab-accordion-title {
+                .gb-accordion-title {
                   background: $pink;
                   border-radius: $border-radius-base;
                   color: white;
@@ -401,17 +401,17 @@ body {
                     outline: none;
                   }
                 }
-                .ab-accordion-text {
+                .gb-accordion-text {
                   background: $gray-lighter;
                 }
                 &[open] {
                   border-radius: $border-radius-base;
                   box-shadow: 0 0 15px #777;
-                  .ab-accordion-title {
+                  .gb-accordion-title {
 //                    background: $primary;
                     border-radius: $border-radius-base $border-radius-base 0 0;
                   }
-                  .ab-accordion-text {
+                  .gb-accordion-text {
                     border-radius: 0 0 $border-radius-base $border-radius-base;
                   }
                 }
@@ -433,7 +433,7 @@ body {
           position: relative;
           right: 50%;
           width: 100vw;
-          .ab-container-inside {
+          .gb-container-inside {
             @extend .container;
             padding-bottom: $grid-gutter-width;
             padding-top: $grid-gutter-width;
