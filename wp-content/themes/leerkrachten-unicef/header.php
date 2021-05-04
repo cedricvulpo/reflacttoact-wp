@@ -30,6 +30,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
 	<?php wp_head(); ?>
+
+	<link rel="icon" href="<?php echo get_stylesheet_directory_uri().'/img/favicon.ico'; ?>" />
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri().'/img/favicon.ico'; ?>" />
+	<link rel="icon" type="image/ico" href="<?php echo get_stylesheet_directory_uri().'/img/favicon.ico'; ?>" />
+	<link rel="icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri().'/img/favicon.ico'; ?>" />
+	<!-- <link rel="icon" type="image/png" href="<?php // echo get_stylesheet_directory_uri().'/img/favicon.png'; ?>" />
+	<link rel="apple-touch-icon" href="<?php // echo get_stylesheet_directory_uri().'/img/favicon.png'; ?>" />
+	<link rel="icon" sizes="192x192" href="<?php // echo get_stylesheet_directory_uri().'/img/favicon.png'; ?>" /> -->
 </head>
 
 <body <?php body_class(); ?>>
