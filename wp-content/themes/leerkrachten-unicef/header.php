@@ -79,13 +79,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		  <?php
 			if (get_locale() == 'nl_NL') {
 				?>
-				<a href="https://www.unicef.be/" target="_blank" class="logo2">
+				<a href="https://www.unicef.be/nl" target="_blank" class="logo2">
 					<img src="/wp-content/themes/leerkrachten-unicef/img/logo_UNICEF.png" alt="Logo Unicef NL" />
 				</a>
 				<?php
 			} else {
 				?>
-				<a href="https://www.unicef.be/" target="_blank" class="logo2">
+				<a href="https://www.unicef.be/fr" target="_blank" class="logo2">
 					<img src="/wp-content/uploads/2021/04/UNICEF_ForEveryChild_Cyan_Vertical_RGB_144ppi_FR-1-e1618490571741.png" alt="Logo Unicef FR" />
 				</a>
 				<?php

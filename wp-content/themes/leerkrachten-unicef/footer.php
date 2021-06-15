@@ -204,17 +204,17 @@ if (is_front_page() && get_locale() == 'nl_NL') {
     <div class="row">
       <div class="col-sm-12">
           <a href="https://diplomatie.belgium.be/en/dgd" target="_blank">
-              <img src="/wp-content/themes/leerkrachten-unicef/img/CBD_logo_NL_RGB.png">
+              <img src="<?php if (get_locale() == 'nl_NL') { echo '/wp-content/themes/leerkrachten-unicef/img/CBD_logo_NL_RGB.png'; }else{ echo '/wp-content/uploads/2021/05/CBD_logo_FR_RGB.jpg'; } ?>" alt="Logo CBD" />
           </a>
       </div>
       <div class="col-sm-6">
           <a href="https://www.ucll.be/" target="_blank">
-              <img src="/wp-content/themes/leerkrachten-unicef/img/logo_UCLL.png">
+              <img src="/wp-content/themes/leerkrachten-unicef/img/logo_UCLL.png" alt="Logo UCLL" />
           </a>
       </div>
       <div class="col-sm-6">
           <a href="https://www.unicef.be/" target="_blank">
-              <img src="/wp-content/themes/leerkrachten-unicef/img/logo_UNICEF.png">
+              <img src="<?php if (get_locale() == 'nl_NL') { echo '/wp-content/themes/leerkrachten-unicef/img/logo_UNICEF.png'; }else{ echo '/wp-content/uploads/2021/04/UNICEF_ForEveryChild_Cyan_Vertical_RGB_144ppi_FR-1-e1618490571741.png'; } ?>" alt="Logo UNICEF" />
           </a>
       </div>
   	</div>

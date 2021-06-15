@@ -4,7 +4,7 @@ Donate link: https://studiopress.com
 Tags: Blocks, editor, gutenberg, gutenberg blocks, page builder, block enabled, page building, block, WP Engine
 Requires at least: 5.3
 Tested up to: 5.7
-Stable tag: 1.2.3
+Stable tag: 1.2.4
 Requires PHP: 7.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -96,6 +96,14 @@ Yes, you will need to have WordPress 5.3 or later installed to take advantage of
 3. Some of the many blocks included in Genesis Blocks
 
 == Changelog ==
+
+= 1.2.4 =
+* Added: The Post Grid block now allows for multiple categories to be selected.
+* Changed: The Post Grid block now requires the user to begin typing the name of the category they wish to add, instead of selecting it from a dropdown menu.
+* Fixed: The Post Grid block has been optimized to reduce load on server and wait times for sites with many categories/pages.
+* Fixed: The Post Grid Block, when set to show pages, incorrectly used the "Number of items" option to limit the number of pages shown. This has been fixed. The "Number of items" option no longer applies to pages while previewing the block in the editor. The number of pages selected are the number of pages shown. Note that this bug did not affect the frontend, but only what you see in the block editor in wp-admin.
+* Fixed: The genesis_blocks_allowed_layout_components filter was broken for Layouts (but not Sections) since version 1.2.2 and has been fixed here.
+
 
 = 1.2.3 =
 * Fixed: Layout link has been moved back to the left of the admin toolbar.

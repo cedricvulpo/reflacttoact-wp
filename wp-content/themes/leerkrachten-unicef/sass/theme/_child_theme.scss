@@ -69,7 +69,7 @@ p {
       margin-right: auto !important;
       a.nav-link {
         color: white;
-        font-size: 200%;
+        font-size: 21px;
         padding: 20px;
         text-transform: capitalize;
         &:hover,
@@ -80,13 +80,20 @@ p {
       @media (min-width: 768px) {
         // align item to the right
         width: 100%;
-        li.menu-item-25 {
+        li.menu-item-25, li.menu-item-607 {
           margin-left: auto;
         }
       }
     }
   }
 }
+
+.txt-nav {
+  a {
+    text-transform: none !important;
+  }
+}
+
 #wrapper-hero {
 //  text-align: center;
   img.size-full {

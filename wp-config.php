@@ -19,17 +19,37 @@
  */
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'reflect_web');
+//define('DB_NAME', 'reflect_web');
 /** MySQL database username */
-define('DB_USER', 'reflect_user');
+//define('DB_USER', 'reflect_user');
 /** MySQL database password */
-define('DB_PASSWORD', 'Fj6s@o05');
+//define('DB_PASSWORD', 'Fj6s@o05');
 /** MySQL hostname */
-define('DB_HOST', '87.238.161.93');
+//define('DB_HOST', '87.238.161.93');
+/** Database Charset to use in creating database tables. */
+//define('DB_CHARSET', 'utf8');
+/** The Database Collate type. Don't change this if in doubt. */
+//define('DB_COLLATE', '');
+
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'leerkracft113');
+
+/** MySQL database username */
+define('DB_USER', 'leerkracft113');
+
+/** MySQL database password */
+define('DB_PASSWORD', 'ZCB5qYYbV2fa');
+
+/** MySQL hostname */
+define('DB_HOST', 'leerkracft113.mysql.db:3306');
+
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
+
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -48,6 +68,7 @@ define('SECURE_AUTH_SALT', '7YPyeiZQCJmGudbrmHwXdNpe+Vf3PvuTr9f1b2R0UxF3Sl5Bp0v0
 define('LOGGED_IN_SALT',   '4A9Zju44PklsodjcRRFViJbD4ADnvvFn5Tpn+GIq0EEbWpwzz7flsIHyYzE/');
 define('NONCE_SALT',       'Jvtgwbi9p798EEqKYJZH5Ayk2XK/U0VUqdzJSYdLzWQIp/9eUPQVrD5HMeam');
 define('CONCATENATE_SCRIPTS', false );
+
 /**#@-*/
 /**
  * WordPress Database Table prefix.
